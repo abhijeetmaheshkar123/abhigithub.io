@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        div{
+            margin-bottom: 1rem;
+        }
+        form{
+            margin: auto;
+        }
+        h2{
+            text-align: center;
+        }
+        form{
+            border: 2px solid red;
+            background-color: azure;
+            font-size: 2rem;
+        }
+        .label{
+            text-align: right;
+        }
+        input{
+            width: 16rem;
+            height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="confirm.html" onsubmit="return myfunc()" name="myform">
+            <h2>Loan Application</h2>
+            <table>
+                <tr>
+                <td class="label">
+                    <label for="a1">
+                    Full Name :
+                </label></td>
+                <td>
+                    <input type="text" name="fname" id="a1" required>
+                    <P id="ll"></P>
+                </td>
+            </tr>
+                <tr>
+                    <td class="label">
+                        <label for="a2">
+                        Email :
+                    </label></td>
+                    <td>
+                        <input type="email" name="email" id="a2" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="a3">
+                        PAN Number :
+                    </label></td>
+                    <td>
+                        <input type="text" name="pan" id="a3" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="a4">
+                        Loan Amount :
+                    </label></td>
+                    <td>
+                        <input type="text" name="loan" id="a4" required maxlength="9" oninput="convert()">
+                        <p id="bb" style="font-size:1rem ;"></p>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="" id=""  value="submit" >
+        </form>
+    </center>
+        
+    
+    
+    <script src="myjs.js"></script>
+</body>
+</html>

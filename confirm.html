@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        font-size: 2rem;
+    }
+    h2{
+        text-align: center;
+    }
+input{
+    height: 2rem;
+    font-size: 1.5rem;
+}
+    
+</style>
+<body>
+    <h2>Confirmation page</h2>
+    <p>Dear <b> <span id="s2"></span></b><br> Thank you for inquiry.A 4 digit verification number has been sent to your Email:
+        <b><span id="s1"></span></b> please enter it in the following box and submit for conformation.</p>
+        <center>
+            <form action="">
+                <label for="b1">Enter OTP</label>
+                <input type="text" name="" id="b1">
+                <input type="submit" name="" id="" value="Validate"><br>
+                <input type="submit" name="" id="" value="Submit" style="margin-top: 1.5rem;">
+            </form>
+        </center>
+    
+    <script>
+        document.getElementById("s2").innerHTML = localStorage.getItem("firstname")
+        document.getElementById("s1").innerHTML = localStorage.getItem("emailvalue")
+        var val = Math.floor(1000 + Math.random() * 9000);
+        console.log(val);
+    </script>
+</body>
+
+</html>
